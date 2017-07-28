@@ -6,8 +6,19 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class JSONParser {
+	private static String file;
+	
+	public JSONParser(String filename) {
+		file = filename;
+	}
+	
 	public static void main(String[] args) throws IOException {
-		FileReader fr = new FileReader("src/file.txt");
+		JSONParser jp = new JSONParser("src/file.txt");
+		jp.validate();
+	}
+	
+	public void validate() throws IOException{
+		FileReader fr = new FileReader(file);
 		int i;
 		char c;
 		String str = "";

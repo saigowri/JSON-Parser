@@ -11,20 +11,29 @@ Simple JSON Validator and Parser created using JSON grammar
 
 ## Methods used for validation :
 
-* *matchStart()* - to ensure presence of open and closing curly braces ( { , } )
-* *matchElement()* 
+*validate()* method calls the following to perform validation -
+
+ * *matchStart()* - to ensure presence of open and closing curly braces ( { , } )
+ * *matchElement()* 
 	1. to ensure key is string 
 	2. to make sure key and value are separated by colon ( : )
 	3. to ensure multiple elements are separated by comma ( , )
-* *matchValue()* - to cover all possible value cases ( [Array], {"Key":Value}, Constants, String )
-* *matchArray()* - to check array syntax and all values that can be present inside an area ( All valid values and array within array s)
-* *matchAlphanum()* and *matchConstants()* - to take care of all terminals ( String, Integer, Float, Boolean, Null )
+ * *matchValue()* - to cover all possible value cases ( [Array], {"Key":Value}, Constants, String )
+ * *matchArray()* - to check array syntax and all values that can be present inside an area ( All valid values and array within array s)
+ * *matchAlphanum()* and *matchConstants()* - to take care of all terminals ( String, Integer, Float, Boolean, Null )
 
 NOTE: *ParserException Class* created to raise user defined exceptions
 
 ## Parsing and returning object :
 
 Once JSON is validated, user is asked to enter the "key" for which he wants value returned.
-getObject() method return the value for a particular "key".
+*getObject()* method return the value for a particular "key".
+
+## JAR file usage :
+
+**Step 1** The JAR file must be added the respective project. 
+**Step 2** To implement it, we must import the JsonParser package which contains the main class which is public.
+**Step 3** The object of the JSONParser Class must be instantiated by passing one paramater of String type.
+**Step 4** The String argument is the full path to the JSON file which has to be validated.
 
 

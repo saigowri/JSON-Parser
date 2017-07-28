@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 //Array -> Value(, Value)* | Value, Array
 
-public class ArrayClass {
+class ArrayClass {
 	int matchArray(ArrayList<Character> jsonString, int index) throws ParserException {
 		if (jsonString.get(index) != ']') {
 			Value v = new Value();
