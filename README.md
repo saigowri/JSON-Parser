@@ -13,9 +13,9 @@ Simple JSON Validator and Parser created using JSON grammar
 
 * *matchStart()* - to ensure presence of open and closing curly braces ( { , } )
 * *matchElement()* 
-		i. to ensure key is string 
-		ii. to make sure key and value are separated by colon ( : )
-		iii. to ensure multiple elements are separated by comma ( , )
+	1. to ensure key is string 
+	2. to make sure key and value are separated by colon ( : )
+	3. to ensure multiple elements are separated by comma ( , )
 * *matchValue()* - to cover all possible value cases ( [Array], {"Key":Value}, Constants, String )
 * *matchArray()* - to check array syntax and all values that can be present inside an area ( All valid values and array within array s)
 * *matchAlphanum()* and *matchConstants()* - to take care of all terminals ( String, Integer, Float, Boolean, Null )
