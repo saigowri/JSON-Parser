@@ -12,9 +12,10 @@ Simple JSON Validator and Parser created using JSON grammar
 ## Methods used for validation :
 
 * *matchStart()* - to ensure presence of open and closing curly braces ( { , } )
-* *matchElement()* >> to ensure key is string 
-		   >> to make sure key and value are separated by colon ( : )
-		   >> to ensure multiple elements are separated by comma ( , )
+* *matchElement()* 
+		i. to ensure key is string 
+		ii. to make sure key and value are separated by colon ( : )
+		iii. to ensure multiple elements are separated by comma ( , )
 * *matchValue()* - to cover all possible value cases ( [Array], {"Key":Value}, Constants, String )
 * *matchArray()* - to check array syntax and all values that can be present inside an area ( All valid values and array within array s)
 * *matchAlphanum()* and *matchConstants()* - to take care of all terminals ( String, Integer, Float, Boolean, Null )
