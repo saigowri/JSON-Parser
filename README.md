@@ -32,8 +32,11 @@ Once JSON is validated, user is asked to enter the "key" for which he wants valu
 ## JAR file usage :
 
 **Step 1** The JAR file must be added the respective project. 
+
 **Step 2** To implement it, we must import the JsonParser package which contains the main class which is public.
+
 **Step 3** The object of the JSONParser Class must be instantiated by passing one paramater of String type.
+
 **Step 4** The String argument is the full path to the JSON file which has to be validated.
 
 
